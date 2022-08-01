@@ -1,0 +1,21 @@
+zone:
+  soa: site.triarom.net
+  soa_admin: noc.triarom.net
+  ttl: 3600
+  zone_refresh_time: 10800
+  zone_retry_interval: 1800
+  expiry_period: 1814400
+  ns_cache_time: 3600
+  nameservers: 
+    - name: ns1.site.triarom.net.
+      address: 172.16.69.4
+  include_site_slug: yes
+  include_states: ['STAGED', 'ACTIVE']
+
+serial:
+  start_at: 1
+  auto_increment: yes
+
+netbox:
+  server: http://netbox.triarom.net
+  token:
